@@ -1,0 +1,68 @@
+/* FloatingDots.css */
+
+@keyframes float {
+    0% {
+      transform: translateY(0) scale(1);
+    }
+    50% {
+      transform: translateY(-20px) scale(1.2);
+    }
+    100% {
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .floating-dots {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    overflow: hidden;
+  }
+  
+  .dot {
+    position: absolute;
+    background-color: #f00; /* Ladybug red color */
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: float 5s infinite ease-in-out;
+    animation-delay: calc(-5s * var(--i)); /* Random delay for each dot */
+  }
+  
+  .dot:nth-child(odd) {
+    background-color: #000; /* Ladybug black color */
+  }
+  
+  .dot {
+    width: 20px;
+    height: 20px;
+  }
+  
+  .dot:nth-child(1) {
+    top: 20%;
+    left: 10%;
+    animation-duration: 7s;
+  }
+  .dot:nth-child(2) {
+    top: 40%;
+    left: 50%;
+    animation-duration: 8s;
+  }
+  .dot:nth-child(3) {
+    top: 60%;
+    left: 30%;
+    animation-duration: 6s;
+  }
+  .dot:nth-child(4) {
+    top: 10%;
+    left: 80%;
+    animation-duration: 9s;
+  }
+  .dot:nth-child(5) {
+    top: 80%;
+    left: 20%;
+    animation-duration: 7s;
+  }
+  

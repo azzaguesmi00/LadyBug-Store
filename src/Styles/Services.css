@@ -1,0 +1,67 @@
+/* Services Page Styles */
+.services {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #ff4b4b, #ff7b7b);
+    color: white;
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    position: relative;
+    animation: fadeInDown 1s ease-in-out;
+  }
+  
+  .services ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .services li {
+    background: white;
+    color: #ff4b4b;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 250px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    animation: fadeInUp 1s ease-in-out forwards;
+    opacity: 0;
+  }
+  
+  .services li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  @keyframes fadeInDown {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,34 @@
+/* Hero Section Styles */
+.hero {
+  position: relative;
+  color: rgb(184, 131, 131);
+  text-align: center;
+  padding: 100px 20px;
+  overflow: hidden;
+  z-index: 1; /* Ensure this is in front of the dots */
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.shop-now-btn {
+  padding: 15px 30px;
+  font-size: 1rem;
+  background-color: #ff4757; /* Ladybug red color */
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.shop-now-btn:hover {
+  background-color: #e84118;
+}
